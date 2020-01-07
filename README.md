@@ -1,4 +1,4 @@
-  #  wildfly
+  #  WildFly
   This application allows to get reduced form for arbitrary set of page numbers.
 
 
