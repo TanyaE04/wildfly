@@ -9,7 +9,7 @@
 
 
   # Getting started
-  Deploy application on WildFly server (can use wildfly-plugin). After the application will be able at http://localhost:8080/{artifactId}/reducedPageNumbers?rawPageNumbers={list of page numbers seperated by comma}
+  Deploy application on WildFly server (can use wildfly-plugin). After the application will be able at http://localhost:8080/{artifactId}/reducedPageNumbers?rawPageNumbers={list_of_page_numbers_seperated_by_comma}
   
   
   Maven plugins:
@@ -24,7 +24,7 @@
           </plugin>
           <plugin>
              <groupId>org.wildfly.plugins</groupId>
-             <artifactId>wildfly-maven-plugin</artifactId>  //deploy application by command ###mvn wildfly:deploy
+             <artifactId>wildfly-maven-plugin</artifactId>  //deploy application by command mvn wildfly:deploy
              <version>2.0.2.Final</version>
           </plugin>
   ```
