@@ -4,7 +4,7 @@
 
 
   # Requirements
-   WildFly 18.0.1 Final
+   WildFly 18.0.1 Final   
    Maven 3.6.3
 
 
