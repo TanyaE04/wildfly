@@ -10,14 +10,15 @@ public class ReducedPageNumbersResources {
 
     @GET
     @Produces (MediaType.APPLICATION_JSON)
-    public String getPageNumbers (@QueryParam ("rawPageNumbers") String str) {
+    public Response getPageNumbers (@QueryParam ("rawPageNumbers") String str) {
         String result;
+        int status = 200;
         try {
             result = "{\n\t\"original\": "+str+"\n\t\"reduced\": "+Util.reducedPageNumbers (str)+"\n}";
         } catch (NumberFormatException e){
-            Response.status (500).build ();
+            status= 500;
             result = e.toString ();
         }
-        return result;
+        return Response.status (status).entity (result).build ();
     }
 }
